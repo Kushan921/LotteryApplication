@@ -1,12 +1,12 @@
 package com.lottery.lottery.dto.responses;
 
-import lombok.Data;
-import lombok.Getter;
-import lombok.Setter;
+import lombok.*;
 
 @Data
 @Setter
 @Getter
+@AllArgsConstructor
+@NoArgsConstructor
 public class EntryResponse {
     private Long lotteryId;
     private String lotterySequence;

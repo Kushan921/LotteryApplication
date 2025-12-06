@@ -4,12 +4,7 @@ import com.lottery.lottery.dto.responses.AuditLogResponse;
 import com.lottery.lottery.entity.AuditLog;
 import org.mapstruct.Mapper;
 
-import java.time.Instant;
-
-@Mapper(componentModel = "spring", imports = Instant.class)
+@Mapper(componentModel = "spring")
 public interface DTOMapper {
-    /**
-     * Audit Log
-     **/
     AuditLogResponse auditLogToAuditLogResponse(AuditLog auditLog);
 }

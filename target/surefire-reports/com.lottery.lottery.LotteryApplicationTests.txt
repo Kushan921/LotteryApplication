@@ -1,4 +1,4 @@
 -------------------------------------------------------------------------------
 Test set: com.lottery.lottery.LotteryApplicationTests
 -------------------------------------------------------------------------------
-Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 3.929 s -- in com.lottery.lottery.LotteryApplicationTests
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 3.765 s -- in com.lottery.lottery.LotteryApplicationTests

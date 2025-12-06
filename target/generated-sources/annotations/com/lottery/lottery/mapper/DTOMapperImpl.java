@@ -2,13 +2,12 @@ package com.lottery.lottery.mapper;
 
 import com.lottery.lottery.dto.responses.AuditLogResponse;
 import com.lottery.lottery.entity.AuditLog;
-import java.time.Instant;
 import javax.annotation.processing.Generated;
 import org.springframework.stereotype.Component;
 
 @Generated(
     value = "org.mapstruct.ap.MappingProcessor",
-    date = "2025-12-04T23:46:59+0530",
+    date = "2025-12-06T18:45:39+0530",
     comments = "version: 1.5.5.Final, compiler: javac, environment: Java 17.0.12 (Oracle Corporation)"
 )
 @Component

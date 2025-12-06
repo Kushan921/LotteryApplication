@@ -39,7 +39,7 @@ public class LotteryService {
         }
     }
 
-    public ResponseEntity<?> getTickets() {
+    public ResponseEntity<MessageResponse<List<TicketResponse>>> getTickets() {
         try {
             List<TicketResponse> tickets = new ArrayList<>();
             for (String t : prePopulatedTickets) {
@@ -55,7 +55,7 @@ public class LotteryService {
         }
     }
 
-    public ResponseEntity<?> createEntry(CreateEntryRequest request, HttpServletRequest http) {
+    public ResponseEntity<MessageResponse<EntryResponse>> createEntry(CreateEntryRequest request, HttpServletRequest http) {
         try {
             String drawn = RandomGeneratorUtil.generateSequence();
             String userTicket = request.getTicketSequence();
@@ -116,7 +116,7 @@ public class LotteryService {
         }
     }
 
-    public ResponseEntity<?> getLotteryEntryByMobileNumber(String mobile) {
+    public ResponseEntity<MessageResponse<List<HistoryResponse>>> getLotteryEntryByMobileNumber(String mobile) {
         try {
             List<HistoryResponse> historyResponse = lotteryEntryRepository.findByMobile(mobile)
                     .stream()
