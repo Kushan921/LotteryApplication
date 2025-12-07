@@ -52,11 +52,8 @@
 		<dependency>
 			<groupId>org.springdoc</groupId>
 			<artifactId>springdoc-openapi-starter-webmvc-ui</artifactId>
-			<version>2.6.0</version>
+			<version>2.7.0</version>
 		</dependency>
-
-
-
 
 		<!-- MapStruct -->
 		<dependency>
@@ -91,8 +88,11 @@
 			<version>4.0.2</version>
 		</dependency>
 
-
-
+		<dependency>
+			<groupId>me.paulschwarz</groupId>
+			<artifactId>spring-dotenv</artifactId>
+			<version>3.0.0</version>
+		</dependency>
 	</dependencies>
 
 	<!-- Compiler Plugin (correct + clean) -->
