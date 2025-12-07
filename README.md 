@@ -1,0 +1,47 @@
+# Lottery Backend Application
+
+This is the backend application for the Lottery system, built using Spring Boot.
+It provides REST APIs with Swagger documentation for easy testing.
+
+
+## Setup Instructions
+
+1. **Create a `.env` file** inside the `resources` folder and add the following sensitive data:
+
+    ```env
+    SPRING_APP_NAME=lottery
+
+    # ==== DATABASE CONFIG ====
+    DB_URL=jdbc:mysql://localhost:3306/lottery_application_db
+    DB_USERNAME=root
+    DB_PASSWORD=
+
+    # ==== SWAGGER / SPRINGDOC ====
+    SPRINGDOC_API_DOCS_PATH=/v3/api-docs
+    SPRINGDOC_SWAGGER_UI_PATH=/swagger-ui.html
+    SPRINGDOC_SWAGGER_ENABLED=true
+    SPRINGDOC_API_DOCS_ENABLED=true
+    SPRINGDOC_OPERATIONS_SORTER=method
+    SPRINGDOC_TAGS_SORTER=alpha
+    SPRINGDOC_DEFAULT_MODELS_EXPAND_DEPTH=-1
+    SPRINGDOC_DEFAULT_MODEL_EXPAND_DEPTH=-1
+
+    # ==== SERVER ERROR DETAILS ====
+    SERVER_ERROR_INCLUDE_MESSAGE=always
+    SERVER_ERROR_INCLUDE_BINDING_ERRORS=always
+    SERVER_ERROR_INCLUDE_STACKTRACE=always
+    ```
+
+2. **Create a local database** called `lottery_application_db`.
+
+3. **Update the `.env` file** with your local database username and password.
+
+4. **Run the application** using your preferred IDE or by executing:
+
+    ```bash
+    mvn spring-boot:run
+    ```
+
+5. **Access Swagger documentation** to test APIs:
+
+    [http://localhost:8080/swagger-ui/index.html](http://localhost:8080/swagger-ui/index.html)
